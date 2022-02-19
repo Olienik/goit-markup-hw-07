@@ -1,22 +1,21 @@
-$color-logo: #2196f3;
-$color-studio: #000000;
-$color-studio-foot: #ffffff;
-$font-logo: Raleway, sans-serif;
-
-.logo {
+%logo-style {
   text-decoration: none;
-  font-family: $font-logo;
+  font-family: $font;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: $color-logo;
+}
 
-  .logo__studio {
-    color: $color-studio;
-  }
+.logo {
+  @extend %logo-style;
+  color: $color-logo;
+}
+.logo__studio {
+  @extend %logo-style;
+  color: $color-studio;
 }
 .logo__foot {
-  @extend .logo;
+  @extend %logo-style;
   color: $color-studio-foot;
 }

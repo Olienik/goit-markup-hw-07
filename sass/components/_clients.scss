@@ -1,0 +1,37 @@
+.client-list {
+  display: flex;
+  margin-top: 50px;
+}
+
+.client-list__item {
+  width: 170px;
+  height: 92px;
+}
+
+.client-list__item + .client-list__item {
+  margin-left: 30px;
+}
+.client-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+  width: 100%;
+  height: 100%;
+  border: solid 1px #afb1b8;
+  border-radius: 4px;
+
+  transition-property: color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    color: $color-text-hover-focus;
+    border-color: $color-text-hover-focus;
+  }
+}
+
+.client-list__svg {
+  fill: currentColor;
+}

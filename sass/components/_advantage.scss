@@ -1,0 +1,48 @@
+.visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.section {
+  padding: 94px 0;
+}
+.advantage-list {
+  display: flex;
+
+  .advantage-list__item {
+    width: 270px;
+  }
+  .advantage-list__item + .advantage-list__item {
+    margin-left: 30px;
+  }
+}
+
+.advantage-list__head {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.advantage-list__par {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $text-color-par;
+}
+.advantage-list__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  height: 120px;
+  background-color: $color-background-icon;
+}

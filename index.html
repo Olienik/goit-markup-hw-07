@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--Верхняя линия-->
@@ -27,7 +27,7 @@
           <ul class="navigation__list">
             <li class="navigation__item">
               <a
-                class="navigation__link navigation__link--active-page"
+                class=" navigation__link--active"
                 href="index.html"
                 >Студия
               </a>
@@ -86,12 +86,12 @@
                   Оставьте свои данные, мы вам перезвоним
                 </p>
                 <div class="registration__container">
-                  <label for="user-name" class="registration__label">Имя</label>
+                  <label for="user__name" class="registration__label">Имя</label>
                   <input
                     type="text"
-                    name="user-name"
+                    name="user__name"
                     size="100"
-                    id="user-name"
+                    id="user__name"
                     class="registration__input"
                     required
                   />
@@ -100,13 +100,13 @@
                   </svg>
                 </div>
                 <div class="registration__container">
-                  <label for="user-phone" class="registration__label"
+                  <label for="user__phone" class="registration__label"
                     >Телефон
                   </label>
                   <input
                     type="tel"
-                    name="user-phone"
-                    id="user-phone"
+                    name="user__phone"
+                    id="user__phone"
                     size="100"
                     required
                     class="registration__input"
@@ -116,13 +116,13 @@
                   </svg>
                 </div>
                 <div class="registration__container">
-                  <label for="registration-email" class="registration__label"
+                  <label for="registration__email" class="registration__label"
                     >Почта</label
                   >
                   <input
                     type="email"
-                    name="registration-email"
-                    id="registration-email"
+                    name="registration__email"
+                    id="registration__email"
                     size="100"
                     required
                     class="registration__input"
@@ -132,12 +132,12 @@
                   </svg>
                 </div>
 
-                <label for="registration-coment" class="registration__label">
+                <label for="registration__coment" class="registration__label">
                   Коментарий
                 </label>
                 <textarea
-                  name="registration-coment"
-                  id="registration-coment"
+                  name="registration__coment"
+                  id="registration__coment"
                   placeholder="Введите текст"
                   class="registration__coment"
                 ></textarea>
@@ -147,8 +147,7 @@
                     name="agreement"
                     id="agreement"
                     class="agreement__checkbox"
-                    required
-                  />
+                    required/>
 
                   <label for="agreement" class="agreement__label"
                     >Соглашаюсь с рассылкой и принимаю
@@ -509,28 +508,26 @@
         <div class="container-foot">
           <div class="flex-grow">
             <a href="" class="logo"
-              >Web<span class="logo__foot">Studio</span></a
-            >
-            <address class="adress">
+              >Web<span class="logo__foot">Studio</span> </a>
+            <address class="address">
               <ul class="address__list">
                 <li class="address__item">
-                  <a
-                    class="address__link"
+                  <a class="address__link"
                     href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
-                    >г. Киев, пр-т Леси Украинки, 26</a
-                  >
+                    >г. Киев, пр-т Леси Украинки, 26 
+                    </a>
                 </li>
                 <li class="address__item">
                   <a
                     class="address__foot-contacts"
                     href="mailto:info@example.com"
-                    >info@example.com</a
-                  >
+                    >info@example.com 
+                  </a>
                 </li>
                 <li class="address__item">
                   <a class="address__foot-contacts" href="tel:+380991111111"
-                    >+38 099 111 11 11</a
-                  >
+                    >+38 099 111 11 11 
+                  </a>
                 </li>
               </ul>
             </address>
@@ -540,28 +537,28 @@
             <ul class="social__list">
               <li class="social__item">
                 <a href="https://www.instagram.com/" class="social__link">
-                  <svg class="social-icon">
+                  <svg class="social__icon">
                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="https://twitter.com/" class="social__link">
-                  <svg class="social-icon">
+                  <svg class="social__icon">
                     <use href="./images/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="https://www.facebook.com/" class="social__link">
-                  <svg class="social-icon">
+                  <svg class="social__icon">
                     <use href="./images/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="https://www.linkedin.com/" class="social__link">
-                  <svg class="social-icon">
+                  <svg class="social__icon">
                     <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
                 </a>
